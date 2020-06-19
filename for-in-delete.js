@@ -5,23 +5,25 @@
 
   You can refresh the page at any time to re-run all the tests.
 */
-
+cd
 /*
   First we'll look at the difference between accessing property values in a for in loop and accessing the property name in a for in loop.
   In the example below, we are accessing the property values. Uncomment the code below, run it and look at what prints in the console.
 */
 
-// var values = {
-//   one: 'These',
-//   two: ' are',
-//   three: ' the',
-//   four: ' property',
-//   five: ' values.'
-// } 
+var values = {
+  one: 'These',
+  two: ' are',
+  three: ' the',
+  four: ' property',
+  five: ' values.'
+} 
+for(var key in values) {
+  console.log(values[key])
 
-// for(var key in values) {
-//   console.log(values[key])
-// }
+  
+
+//  }
 
 /*
   In this next example, we are accessing the property names themselves. Uncomment the code below, run it and look at what prints in the console.
@@ -41,6 +43,8 @@
 
 function showValues( obj ) {
   //Code Here
+  for(var key in obj) {
+    return values.concat(obj[keys]);
 }
 
 
@@ -156,7 +160,4 @@ var deleteTheBigNumbers = {
 
   (hint: the method includes() may be of use...)
 */
-
 //Code Here
-
-

@@ -21,7 +21,12 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
-//Code Here
+var {color, make, model, year} = carDetails;
+  
+
+
+
+
 
 
 
@@ -35,7 +40,7 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+   let { title, firstName, lastName } = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -43,60 +48,91 @@ function greeting( obj ) {
 
 
 
-////////// PROBLEM 3 //////////
+// ////////// PROBLEM 3 //////////
 
-/*
-  Write a function called totalPopulation that will take in an object.
-  That object will have 4 properties named utah, california, texas and arizona.
-  The property values will be numbers.
-  Use object destructuring to save the property values to new variables.
-  Sum up the values and return the total number.
-*/
+// /*
+//   Write a function called totalPopulation that will take in an object.
+//   That object will have 4 properties named utah, california, texas and arizona.
+//   The property values will be numbers.
+//   Use object destructuring to save the property values to new variables.
+//   Sum up the values and return the total number.
+// */
 
-//Code Here
+// // //Code Here
+function totalPopulation(obj){
+  const {utah, califorina, texas, arizona} = obj
+  return utah + califorina + texas + arizona
+}
+// ////////// PROBLEM 4 //////////
 
+// /*
+//   Write a function called ingredients that will take in an object. 
+//   This object will have 3 properties named carb, fat, and protein. 
+//   The property values will be strings. 
+//   Use object destructuring to save the property values to new variables. 
+//   Push these new variables to an array and return the array. 
+// */
 
+// //Code Here
+function ingredients (obj){
+  
+    const {carb, fat, protien} = obj
 
-////////// PROBLEM 4 //////////
+      let newArr = []
 
-/*
-  Write a function called ingredients that will take in an object. 
-  This object will have 3 properties named carb, fat, and protein. 
-  The property values will be strings. 
-  Use object destructuring to save the property values to new variables. 
-  Push these new variables to an array and return the array. 
-*/
+     newArr.push(carb, fat, protien)
 
-//Code Here
+return newArr.obj
 
-
-
-////////// PROBLEM 5 //////////
-
-/*
-  Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
-  Example:
-    function example( {one, two, three} ) {
-      return one + two + three
-    }
-
-  Write a function called largeNumbers that will take a destructured object as it's parameter.
-  The object properties will be named first, second, and third and their values will be numbers.
-  Find the smallest number of the three and return that number.
-*/
-
-//Code Here
+}
 
 
 
-////////// PROBLEM 6 //////////
+// ////////// PROBLEM 5 //////////
 
-/*
-  Write a function called numberGroups that will take a destructured object as it's parameter.
-  The object properties will be named a, b, and c and their values will be arrays of numbers.
-  Find the longest array and return that array.
-*/
+// /*
+//   Now we will use object destructuring as the function's parameter instead of destructuring the object inside of the function declaration.
+//   Example:
+//     function example( {one, two, three} ) {
+//       return one + two + three
+//     }
 
-//Code Here
+//   Write a function called largeNumbers that will take a destructured object as it's parameter.
+//   The object properties will be named first, second, and third and their values will be numbers.
+//   Find the smallest number of the three and return that number.
+// */
+
+// // //Code Here
+function largeNumbers( {first, second, third} )  {
+  let arr = [first, second, third];
+  for ( i = 0; i <= arr.length; i++){
+    arr > (arr[i]);
+    return arr
+  }
+
+ }
+   
 
 
+  
+
+
+
+
+// ////////// PROBLEM 6 //////////
+
+// /*
+//   Write a function called numberGroups that will take a destructured object as it's parameter.
+//   The object properties will be named a, b, and c and their values will be arrays of numbers.
+//   Find the longest array and return that array.
+// */
+
+// // //Code Here
+function numberGroups(a,b,c){
+  let arr = [a, b, c,]
+  for (i = 0; arr < arr.length; i++){
+    arr = arr.length;
+    return arr
+  }
+  
+}

@@ -51,7 +51,15 @@ var employees = [
 */
 
 //Code Here
+function employeeUpdater(arr) {
+  for( i = 0; i < arr.lenght; i++)
+    for(let key in arr[i]) {
+      if( 'firstName' === 'Theo' ){
+        arr[i][key].remove 
 
+      }
+    } 
+}
 
 
 ////////// PROBLEM 2 //////////
