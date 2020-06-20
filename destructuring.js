@@ -76,13 +76,13 @@ function totalPopulation(obj){
 // //Code Here
 function ingredients (obj){
   
-    const {carb, fat, protien} = obj
+    const {carb, fat, protein} = obj
 
       let newArr = []
 
-     newArr.push(carb, fat, protien)
+     newArr.push(carb, fat, protein)
 
-return newArr.obj
+return newArr
 
 }
 
@@ -104,13 +104,16 @@ return newArr.obj
 
 // // //Code Here
 function largeNumbers( {first, second, third} )  {
-  let arr = [first, second, third];
-  for ( i = 0; i <= arr.length; i++){
-    arr > (arr[i]);
-    return arr
+  if( first < second && first < third){
+    return first;
+  }else if ( second < first && second < third){
+    return second;
+  }else {
+    return third;
   }
 
- }
+
+}
    
 
 
@@ -129,10 +132,15 @@ function largeNumbers( {first, second, third} )  {
 
 // // //Code Here
 function numberGroups(a,b,c){
-  let arr = [a, b, c,]
-  for (i = 0; arr < arr.length; i++){
-    arr = arr.length;
-    return arr
+  arr = []
+  if( a[i] < b[i] && a[i] <  c[i] ){
+    return a[i];
+  }else if ( b[i] < a[i] && b[i] < c[i] ){
+    return b[i];
+  }else {
+    return c[i];
   }
+
+
   
 }
