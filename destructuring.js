@@ -140,7 +140,4 @@ function numberGroups(a,b,c){
   }else {
     return c[i];
   }
-
-
-  
 }

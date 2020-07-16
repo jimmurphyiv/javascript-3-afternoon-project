@@ -51,16 +51,12 @@ var employees = [
 */
 
 //Code Here
-function employeeUpdater(arr) {
-  for( i = 0; i < arr.lenght; i++)
-    for(let key in arr[i]) {
-      if( 'firstName' === 'Theo' ){
-        arr[i][key].remove 
-
-      }
-    } 
+function employeeUpdater(){
+  for(var key in employees){
+    if(employees[key] === 'Theo');
+    delete employees[key];
+  }
 }
-
 
 ////////// PROBLEM 2 //////////
 
@@ -77,6 +73,16 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+function removeDuplicates (workplaceAccidents){
+  for (let i = 0; i < workplaceAccidents; i++){
+    for (let j = 0; j < workplaceAccidents; j++){
+    if (arr[i] === arr[j]){
+      workplaceAccidents.splice(arr[i], 1)
+    }}
+  }
+}
+
+
 
 
 
@@ -105,8 +111,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity= cat.catFriends[0].activities[1];
+var fluffy2ndFriend= cat.catFriends[1].name;
 
 
 
@@ -145,8 +151,17 @@ var myCar = {
     2. Loop over the accidents array.
     3. Change atFaultForAccident from true to false.
 */
-
 //Code Here
+function recordCleaner(accidents){
+  for (let i = 0; i < accidents.length; i++) {
+   if (accidents.atFaultForAccident === true){
+     accidents.atFaultForAccident === false;
+   }
+  }
+}
+
+
+
 
 
 
@@ -166,5 +181,18 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+function looper(arr){
+  newArr = [];
+  for (let i = 0; i < arr.length; i++){
+    for (let nestedi = 0; nestedi < arr[i].length; nestedi++){
+      if (arr[i][nestedi] % 2 === 0){
+       arr[i][nestedi] = "even";
+        }else {
+       arr[i][nestedi] = "odd"
+        }
+      }
+    }
+    return arr;
+  }
 
 
