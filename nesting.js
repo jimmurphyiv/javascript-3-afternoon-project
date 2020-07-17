@@ -152,10 +152,10 @@ var myCar = {
     3. Change atFaultForAccident from true to false.
 */
 //Code Here
-function recordCleaner(accidents){
-  for (let i = 0; i < accidents.length; i++) {
-   if (accidents.atFaultForAccident === true){
-     accidents.atFaultForAccident === false;
+function recordCleaner(myCar){
+  for (let i = 0; i < myCar.accidents.length; i++) {
+   if (myCar.accidents.atFaultForAccident === true){
+     myCar.accidents.atFaultForAccident === false;
    }
   }
 }
